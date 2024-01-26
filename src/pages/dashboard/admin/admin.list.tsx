@@ -51,14 +51,12 @@ export const AdminList: React.FC = () => {
   return (
     <div className="flex flex-col gap-y-3 w-full">
       <div>
-        {user?.role === "Admin" || user?.role === 'M&E Manager' && (
           <Button
             onClick={toggle}
             className="bg-primary text-white px-3 py-1 rounded-lg"
           >
             Add New
           </Button>
-        )}
       </div>
       <Table
         headers={headers}
